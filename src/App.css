@@ -1,0 +1,163 @@
+/* Particle Container */
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Places particles behind the content */
+}
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgb(248 249 250 / 63%) !important;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+section#about {
+  margin-block: 50px;
+}
+/* Hero Section Styling */
+/* General styles for the hero section */
+/* General styles for the hero section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(128deg, #ff9999, #6969ff, #5de5abad);
+  overflow: hidden; /* Ensure the image doesn't overflow outside the container */
+}
+
+/* Buttons will appear above the image */
+.hero-buttons {
+ 
+  top: 30%; /* Adjust to place the buttons as you like */
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-buttons.fade-in {
+  opacity: 1;
+}
+
+/* Image will slide from left to right and act as a background with an angular crop */
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: repeat;
+  background-position: cente0px 0px;
+  opacity: 0;
+  transform: translateX(-100%); /* Start off-screen to the left */
+  transition: transform 1s ease-out, opacity 1s ease-out; /* Slide and fade in */
+
+}
+@media (max-width: 768px){
+  .hero-image{
+    background-size: cover;
+  }
+}
+
+.hero-image.slide-in {
+  opacity: 1;
+  transform: translateX(0); /* Move to the normal position */
+}
+
+/* Text Section */
+.hero-text {
+  display: flex
+;
+  position: sticky;
+  /* opacity: 0; */
+  transition: opacity 1s ease-in-out;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-text {
+  opacity: 1;
+}
+
+
+/* Make sure the container covers the entire viewport */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* This ensures that the particles don't interfere with clicking the content */
+}
+
+/*contact */
+#contact {
+  background-color: #343a40;
+}
+
+.contact-details h4 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.contact-details ul {
+  padding-left: 20px;
+}
+
+.contact-details li {
+  margin-bottom: 10px;
+}
+
+form {
+  background-color: #444;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form .form-label {
+  color: #fff;
+}
+
+form .form-control {
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  #contact .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex
+;
+  flex-wrap: wrap;
+  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-right: calc(-.5* var(--bs-gutter-x));
+  margin-left: calc(-.5* var(--bs-gutter-x));
+  align-items: center;
+}

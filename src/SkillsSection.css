@@ -1,0 +1,103 @@
+/* Skills Section */
+.skills-section {
+    background-color: #f8f9fa;
+    overflow: hidden;
+}
+
+.col-md-6.col-lg-3.skill-card-wrapper.slide-in {
+    margin-block: 6px;
+}
+
+.skills-section h2 {
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.skills-section h2.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skill Card Wrapper for Animation */
+.skill-card-wrapper {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.skill-card-wrapper.slide-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skill Card */
+.skill-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.skill-header {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+/* 3D Effect for Icons */
+.skill-icon {
+    font-size: 3rem;
+    color: #1a2a6c;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 4px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: rotateX(20deg) rotateY(20deg);
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+}
+
+.skill-icon:hover {
+    transform: rotateX(0deg) rotateY(0deg) scale(1.1);
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4), 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skill-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a2a6c;
+}
+
+.skill-progress {
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+}
+
+.skill-level {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skill-card {
+        margin-bottom: 20px;
+    }
+}

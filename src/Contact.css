@@ -1,0 +1,29 @@
+.glowing-img {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.4), 0 0 30px rgba(0, 255, 255, 0.3);
+  }
+  
+  .glowing-img:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6);
+  }
+  
+  .card {
+    border-radius: 12px; /* Smooth corners */
+  }
+  
+  .card .form-control {
+    border-radius: 8px; /* Rounded form fields */
+  }
+  
+  .btn-light {
+    background-color: #fff;
+    color: #34495e;
+    border-radius: 6px; /* Rounded button */
+    font-weight: bold;
+  }
+  
+  .btn-light:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
