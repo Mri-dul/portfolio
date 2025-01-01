@@ -13,6 +13,7 @@ import SkillsSection from './components/Skills';
 import ContactSection from './components/Contact';
 import Footer from './components/Footer';
 import Dcomp from './components/Dcomp';
+import ThreeDCube from './components/ThreeDCube';
 const App = () => {
  
 
@@ -23,6 +24,7 @@ const App = () => {
       <HeroSection />
       <AboutSection />
       <Dcomp/>
+   
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />

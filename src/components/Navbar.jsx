@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../Navbar.css';
-
+import logo from './logo.jpg';
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const navbarRef = useRef(null);
@@ -32,6 +32,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light fixed w-full z-50 shadow-md" ref={navbarRef}>
         <div className="container mx-auto">
           <a className="navbar-brand text-gradient text-2xl font-bold" href="#home">
+            <div className='logo'><img src={logo} alt="" /></div>
             Mridul Bhakta
           </a>
           <div className="navbar-collapse desktop-navbar">

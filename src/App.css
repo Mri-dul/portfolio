@@ -5,6 +5,18 @@
   height: 100%;
   z-index: -1; /* Places particles behind the content */
 }
+a.navbar-brand.text-gradient.text-2xl.font-bold {
+  display: flex
+;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo img {
+  width: 40px;
+  border-radius: 8px;
+  border: #c4c4c4 2px;
+  padding: 4px;
+}
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgb(248 249 250 / 63%) !important;
