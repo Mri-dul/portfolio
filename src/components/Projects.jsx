@@ -11,10 +11,12 @@ const Projects = () => {
     { title: 'Project 5', description: 'A project that integrates advanced technologies for better user experience.' },
   ];
 
+  // Go Left: Move to the previous project
   const goLeft = () => {
     setCurrentIndex((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
   };
 
+  // Go Right: Move to the next project
   const goRight = () => {
     setCurrentIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
   };
@@ -24,6 +26,7 @@ const Projects = () => {
       <div className="container">
         <h2 className="text-center mb-4">Projects</h2>
         <div className="row justify-content-center position-relative">
+          {/* Left Button */}
           <button className="nav-btn left-btn" onClick={goLeft}>❮</button>
 
           {/* Cards Container */}
@@ -49,6 +52,7 @@ const Projects = () => {
             })}
           </div>
 
+          {/* Right Button */}
           <button className="nav-btn right-btn" onClick={goRight}>❯</button>
         </div>
       </div>
